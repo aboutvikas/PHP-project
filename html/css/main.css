@@ -1,0 +1,345 @@
+        /**********************************************************/
+        /**********************   Setting   ***********************/
+        /**********************************************************/
+        
+        .col-1{
+            display: block;
+            float: left;
+            margin: 1% 0;
+            width: 100%;
+        }
+         .col-2{
+            display: block;
+            float: left;
+            margin: 1% 0 1% 2%;
+            width: 66%;
+            box-sizing: border-box;
+        }
+        .col-3{
+            display: block;
+            float: left;
+            margin: 1% 0 1% 2%;
+            width: 32%;
+        }
+        .col-4{
+            display: block;
+            float: left;
+            margin: 1% 0 1% 2%;
+            width: 42%
+        }
+        .col-5{
+            display: block;
+            float: left;
+            margin: 1% 0 1% 2%;
+            width: 56%
+        }
+        
+        .col-1:first-child,
+        .col-2:first-child,
+        .col-3:first-child,
+        .col-4:first-child,
+        .col-5:first-child{
+            margin-left: 0;
+        }
+        .flex-col{
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 0;
+        }
+      
+        body{
+            background-color: #f1f1f1;
+            margin:0;
+            padding:0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        
+        section{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1150px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .clearfix{
+            clear: both;
+        }
+        
+         ul{
+            padding: 0;
+            margin: 0;
+        }
+        
+         p{
+            font-size: .9em;
+            line-height: 150%;
+            display: block;
+            font-weight: 400;
+        }
+        form{
+            margin: 0;
+        }
+        /**********************   Header   ***********************/
+
+        header,
+        footer{
+            background-color: #443266;
+            color: whitesmoke;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding:0 0 0 0 ;
+            overflow: hidden;
+        }
+ 
+        .link a{
+            text-decoration: none;
+            color: white;
+        }
+        .link a:hover{
+            color: #9f79f2;
+        }
+        .link li{
+            list-style-type: none;
+            display: inline-block;
+            padding:0 9px;
+            border-right:1px white solid;
+            line-height: 11px;
+            font-size:.8em;
+        }
+        .link li:last-child{
+            border-right:none;
+            padding-right: 0;
+        }
+        .home{
+            padding: 3% 0%;
+            text-align: center;
+        }
+        
+        .header-left{
+            text-align: left;
+            padding: 3% 0;
+            font-size:.9em;
+        }
+        
+        .header-right{
+            text-align: right;
+            padding: 3% 0 3% 0;
+        }
+        
+       .header-right input[type=text] {
+           padding: 8px 0px 8px 8px;
+           margin: 10px 0;
+           border-radius: 3px;
+           border: none;
+           background-image: url('search-icon.png');
+           background-repeat: no-repeat;
+           background-position:right; 
+           background-size: 55px;
+           outline:none;
+        }
+       
+        .header-right input[type=text]:focus {
+           border: 3px solid #fff;
+           background-color: white;
+        }
+
+        /**********************   Nav   ***********************/
+
+.nav-menu{
+    border: 1px solid #5B4388;
+    border-width: 1px 1px 0 1px;
+    background-color: #4F3A77;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+nav li{
+    list-style: none;
+    float: left;
+}
+nav li ul{
+    position: absolute;
+    border-radius:0 0 3px 3px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+nav li a{
+    display: block;
+    color: white;
+    text-decoration:none;
+    min-width: 85px;
+    line-height: 40px;
+    height: 40px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+        }
+nav li:hover a{
+    background-color:#614496;
+    cursor: pointer;
+}
+nav li:hover ul a{
+    background-color: #f1f1f1;
+    color: black;
+}
+nav li:hover ul a:hover{
+    background-color: #f27c66;
+    color: white;
+}
+/*  To make Dropdown list vertical   */
+nav li ul li{
+    display: block;
+    float: none;
+}
+nav li ul li a{
+    padding:0 12px;
+    min-width: 100px;
+    box-sizing: border-box;
+    transition: .2s;
+}
+/* to hide dropdown menu */
+nav li ul{
+    display: none;
+    z-index: 1;
+}
+/*   To make dropdown menu visible   */
+nav li a:hover+.hidden,.hidden:hover{
+    display: block;
+}
+/*   Hide CheckBox   */
+nav input[type=checkbox]{
+    display:none;
+}
+/* Decorate Nav Buttun   */
+.nav-button{
+    display: none;
+    padding: 7px;
+    text-decoration: none;
+    background-color: #614496;
+}
+.nav-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 5px;
+}
+/* To make clickable nav menu */
+nav input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+.active{
+    background-color:#5B4388;
+}
+.login{
+    display: none;
+    position: absolute;
+    margin-left: -70px;
+    border: 5px solid #5B4388;
+    border-width: 0 2px 2px 2px;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: #efefef;
+    width: 250px;
+    border-radius:0 0 4px 4px;
+    padding: 4px 10px 10px 10px;
+}
+.login a{
+    color: #5B4388;
+    padding: 0;
+    line-height: 28px;
+    height: 28px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 4px;
+}
+.login a:hover{
+    color: red;
+}
+nav li:hover a+.login a{
+    background-color: #efefef;
+}
+
+nav li a:hover+.login,.login:hover{
+    display: block;
+}
+.login input:not(.login-btn){
+    display: block;
+    width: 100%;
+    padding: 2% 3%;
+    box-sizing: border-box;
+    margin: 8px 0px 3px 0px;
+    line-height: 27px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid darkgrey;
+}
+.login input:hover{
+    border: 1px solid skyblue;
+}
+.login input:focus{
+    border: 1px solid rebeccapurple;
+    transition: .8s;
+}
+.login input[type=submit]{
+    padding:9px;
+    font-size: 1.1em;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #5B4388;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    transition: .3s;
+    border: 1px solid #5B4388;
+}
+.login input[type=submit]:hover{
+    color: #5B4388;
+    background-color: #fff;
+    border: 1px solid;
+    transition: .3s;
+}
+/* Ending NavBar     */
+
+/******************** Section css or Common page css  ********************/
+
+.error,.success{
+    margin: 0 0 6px 0;
+    border: 1px solid;
+    padding: 13px;
+    border-radius: 4px;
+}
+
+.error{
+    color: #A94442;
+    background-color: #F2DEDE;
+    text-align: center;
+}
+.error::before{
+/*    content: "Error:";*/
+    font-weight: bold;
+/*    margin-right: 5px;*/
+}
+.success{
+    color: #538753;
+    background-color: #DFF0D8;
+    text-align: center;
+}
+.success::before{
+    content: "Success!";
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+        /**********************   footer  ***********************/
+
+footer{
+    padding: 0;
+    margin: 0;
+}
+.footer{
+    padding: 2% 0;
+}

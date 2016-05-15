@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To RSMT</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <style>
+/*
+        .attendence_heading {
+            text-align: center;
+            background-color: white;
+            line-height: 100px;
+        }
+        .attendence,.attendence-fill{
+            background-color: white;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .attendence input[type="radio"],form input[type="radio"]{
+            display: none;
+        }
+        .attendence label,form input[type="radio"] label{
+            padding: 15px 0px;
+            display: inline-block;
+            margin-right: 1%;
+            background-color: lightcoral;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 14%;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 1.3em;
+        }
+        .attendence label:hover {
+            background-color: rebeccapurple;
+            transition: .3s;
+        }
+        .attendence input[type="radio"]:checked + label{
+            background-color: lightslategray;
+        }
+        .attendence-month select{
+            padding: 10px;
+        }
+        .attendence-fill{
+            text-align: center;
+            overflow: auto;
+        }
+        .attendence-input input{
+            border: 1px solid grey;
+            padding: 5px 4px;
+        }
+*/
+        .attend-form,
+        .attend-heading,
+        .stu-details{
+            background-color: white;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .attend-heading h2{
+            line-height: 45px;
+            text-align: center;
+            color: #111;
+            margin: 20px;
+        }
+        .attend-form{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .attend-form form input,
+        .attend-form form select {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 30%;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: 2px;
+            color: #111;
+        }
+        .attend-form  ::-webkit-input-placeholder {
+            color: #111;
+        }
+        .attend-form form input:focus,
+        .attend-form form select:focus{
+            color: black;
+            outline: none;
+            border:1px solid rebeccapurple;
+        }
+        .attend-form input[type="submit"]{
+            background-color: #443266;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: 3px;
+            margin: 0;
+            transition: .3s;
+        }
+        .attend-form input[type=submit]:hover{
+            background-color: white;
+            color: #443266;
+            border: 1px solid #443266;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+        }
+        .stu-details{
+            text-align: center;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        .stu-details table{
+            width:100%;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-------------------------  Header -------------------->
+     <header>
+    <div class="container">
+         <div class="header-left col-3" style="float:left;">
+             <p><span style="font-weight:bold;">Call : </span>+91 542-2108316</p>
+             <p class="link"><span style="font-weight:bold;">Email : </span><a href="mailto:mrvikas.seth@gmail.com">rsmt.ac.in@gmail.com</a></p>
+            </div> 
+            <div class="home col-3" style="padding-left:0%; float:left;">
+               <a href="index.html"><img src="img/logo.png" width="100px" height="100px"></a>
+           </div>
+           <div class="header-right col-3 link" style="float:right;">                  
+                <ul style="padding-bottom:4%;">
+                   <li><a href="">AboutUs</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="">Apply Now</a></li>
+               </ul>
+               <form class="search" name="search" method="get" action="#">
+                   <input type="text" name="search" id="search" placeholder="Search the Site.." size="25px">
+               </form>
+            </div>
+            <div class="clearfix"></div>
+    </div>
+    <!--------------------------    Nav Bar   ----------------------------------------->
+    <div class="container">
+         <nav>
+            <div class="nav-menu">
+                <label for="nav-button" class="nav-button">
+                    <span><a href="index.html" style="float:left;">RSMT</a></span>
+                    <span style="float:right; font-size:1.2em;">&#9776;</a></span>
+                    <div class="clearfix"></div>
+                </label>
+                <input type="checkbox" id="nav-button" role="button">
+                <ul class="nav-left" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a>Course &#9662;</a>
+                        <ul class="hidden">
+                            <li><a href="#">MCA</a></li>
+                            <li><a href="#">MBA</a></li>
+                            <li><a href="#">BCA</a></li>
+                            <li><a href="#">BBA</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Facilities &#9662;</a>
+                        <ul class="hidden">
+                            <li><a href="#">Computer Lab</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Hostel</a></li>
+                            <li><a href="#">Cafetaria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a>About Us &#9662;</a>
+                        <ul class="hidden">
+                            <li><a href="#">Vision & Mission</a></li>
+                            <li><a href="#">President's Message</a></li>
+                            <li><a href="#">Varanasi City</a></li>
+                            <li><a href="#">Chairman's Message</a></li>
+                            <li><a href="#">Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class="active" style="float:right;"><a href="reg.html">Register</a></li>
+                    <li style="float:right;"><a>Login</a>
+                        <div class="login">
+                            <form name="login" action="#">
+                                <input type="text" id="userid" placeholder="Username">
+                                <input type="password" id="pass" placeholder="Password">
+                                <a href="">Forgotten your password?</a>
+                                <input type="submit" name="sub" id="sub" class="login-btn" value="Submit">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>  
+    </header>
+    <section>
+        <div class="container">
+            <div class="attend-heading col-1">
+                <h2>Attendence Submition Page</h2>
+            </div>
+            <div class="attend-form col-1">
+                <form action="#" method="post" class="tt">
+    <!--
+                    <div class="attendence col-1">
+                        Choose Course :  
+                        <input type="radio" id="mca" value="mca" name="course"><label for="mca">MCA</label>
+                        <input type="radio" id="bca" value="bca" name="course"><label for="bca">BCA</label>
+                        <input type="radio" id="mba" value="mba" name="course"><label for="mba">MBA</label>
+                        <input type="radio" id="bba" value="bba" name="course"><label for="bba" style="margin-right:0;">BBA</label>
+                    </div>
+                        Choose Semester :
+                        <input type="radio" id="I" value="I" name="Sem"><label for="I">I</label>
+                        <input type="radio" id="II" value="II" name="Sem"><label for="II">II</label>
+                        <input type="radio" id="III" value="III" name="Sem"><label for="III">III</label>
+                        <input type="radio" id="IV" value="IV" name="Sem"><label for="IV" style="margin-right:0;">IV</label>
+    -->
+<!--                     <label for="attend-course">Choose Course :</label>-->
+                     <select id="attend-course" required>
+                         <option value="" selected hidden>Choose Course</option>
+                         <option id="mca" value="mca">MCA</option>
+                         <option id="mba" value="mba">MBA</option>
+                         <option id="bba" value="bba">BBA</option>
+                         <option id="bca" value="bca">BCA</option>
+                     </select><br>
+
+<!--                     <label for="attend-sem">Choose Semester :</label>-->
+                     <select id="attend-sem" required>
+                         <option value="" selected hidden>Choose Semester</option>
+                         <option id="I" value="I">I</option>
+                         <option id="II" value="II">II</option>
+                         <option id="III" value="III">III</option>
+                         <option id="IV" value="IV">IV</option>
+                     </select><br>
+
+<!--                  <label for="atten-month"> Choose Month : </label>-->
+                  <select id="attend-month" required>
+                        <option value="" selected hidden>Select Month</option>
+                        <option value="Jan" id="jan">January</option>
+                        <option value="Feb" id="feb">February</option>
+                        <option value="Mar" id="mar">March</option>
+                        <option value="Apr" id="apr">April</option>
+                        <option value="May" id="may">May</option>
+                        <option value="Jun" id="jun">June</option>
+                        <option value="Jul" id="jul">July</option>
+                        <option value="Aug" id="aug">August</option>
+                        <option value="Sep" id="sep">September</option>
+                        <option value="Oct" id="oct">October</option>
+                        <option value="Nov" id="nov">November</option>
+                        <option value="Dec" id="dec">December</option>
+                  </select><br>
+<!--                    Enter class attended this month :-->
+                    <input type="text" id="sub-name" placeholder="Enter Subject Code (eg: NMCA 412)" required><br>
+                    <input type="text" id="attened-classes" placeholder="Enter total attended classes in this month" maxlength="2" required><br>
+                    <input type="submit" value="Submit" id="attend-submit">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="stu-details col-1">
+                <h2>Students Details</h2>
+                <table>
+                    <tr>
+                        <th>Roll No</th><th>Name</th><th>Course</th><th>Semester</th><th>Attendence</th><th>Month</th>
+                    </tr>
+                    <tr>
+                        <td>1410814041</td><td>Vikas Seth</td><td>MCA</td><td>IV</td><td><input type="text" size="3" maxlength="2"></td><td>May</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+<footer>
+        <div class="container">
+            <div class="footer link">
+                 <ul class="footer-left">
+                <li style="border-right:none;">&copy; Copyright2016.   Designed by <a href="http:/google.com/+aboutvikas">Vikas Seth</a></li>
+                <ul class="footer-right" style="float:right;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Apply</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+</footer>

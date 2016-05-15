@@ -1,0 +1,129 @@
+ /*  GO FULL WIDTH BELOW 581 PIXELS */
+        @media screen and (max-width: 581px){
+            .col-3,
+            .col-2,
+            .col-1,
+            .col-4,
+            .col-5{ margin-bottom:1% 0; width: 100%; float:right;}
+
+            .container{ width: 97%; margin: 0 auto;}
+            .flex-col{
+                display: block;
+            }
+
+            header{width: 100%;}
+
+            .header-right,
+            .header-left,
+            .home{text-align: center;}
+            
+/*  Nav Menu      */
+            nav ul{
+                position: static;
+            }
+            nav li ul{
+                position:static;
+                display: none;
+            }
+            nav ul li,nav li a{
+                width: 100%;
+            }
+            .nav-button{
+                display: block;
+            }
+            .nav-menu{
+                overflow: hidden;
+            }
+            #menu{
+                display: none;
+            }
+            .login{
+                position: static;
+                border: 5px solid #5B4388;
+                margin: 0;
+                width: 100%;
+                padding: 1.7%;
+            }
+            .login input[type=text],
+            .login input[type=password]{
+                width: 100%;
+                margin: 6px 0 0 1px;
+            }
+            .active{
+                background-color:#4F3A77;
+            }
+/*    /nav     */
+            
+            .reg-heading li{
+            line-height: 40px;
+            display: block;
+            }
+                .footer-right{
+                    display: none;
+                }
+            .reg input:hover,
+            .login input:hover,
+            .contact-form input[type='text']:hover,
+            .contact-form textarea:hover{
+                border: 1px solid rebeccapurple;
+                transition: .8s;
+            }
+            .attend-form form input,.attend-form form select {
+/*            display: block;*/
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+            }    
+        @media screen and (min-width: 582px) and  (max-width: 769px){
+            .col-5,
+            .col-4,
+            .col-3,
+            .col-2,
+            .col-1{ margin-bottom:1% 0; width: 100%; float:right;}
+
+            .container{ width: 98%; margin: 0 auto;}
+            .header-right,
+            .header-left,
+            .home{text-align: center;}
+
+            header{width: 100%;}
+            /*  Nav Menu      */
+            nav ul{
+                position: static;
+            }
+            nav li ul{
+                position:static;
+                display: none;
+            }
+            nav ul li,nav li a{
+                width: 100%;
+            }
+            .nav-button{
+                display: block;
+            }
+            .nav-menu{
+                overflow: hidden;
+            }
+            #menu{
+                display: none;
+            }
+            .login{
+                position: static;
+                border: 5px solid #5B4388;
+                margin: 0;
+                width: 100%;
+                padding: 1.7%;
+            }
+            .login input[type=text],
+            .login input[type=password]{
+                width: 100%;
+                margin: 6px 0 0 1px;
+            }
+            .active{
+                background-color:#4F3A77;
+            }
+/*    /nav     */
+            
+        }

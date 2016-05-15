@@ -1,0 +1,94 @@
+
+/*************************  Section   *****************************************************/
+.heading,
+.address,
+.widget{
+    background-color: white;
+    padding:2%;
+    box-sizing: border-box;
+}
+.heading-location{
+    text-align: center;
+    padding: 1% 0;
+}
+.heading-location h1{
+    display: inline-block;
+    background-color: #443266;
+    padding: 0 50px;
+    line-height: 50px;
+    border-radius:20px 0;
+    border: 2px solid #443266;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+.heading-location h1:hover{
+    color:#443266;
+    background-color: white;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    border:2px solid #443266;
+    
+}
+.email a{
+    text-decoration: none;
+    color: black;
+}
+.email a:hover{
+    color: red;
+}
+.contact-form input[type='text'],
+.contact-form textarea{
+    width: 100%;
+    line-height: 35px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    border: 1px solid #5f5f5f;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 3px;
+}
+.contact-form input[type='text']:hover,
+.contact-form textarea:hover{
+    border:1px solid skyblue;
+    transition: .3s;
+}
+.contact-form input[type='text']:focus,
+.contact-form textarea:focus{
+    border: 1px solid rebeccapurple;
+    color: rebeccapurple;
+    box-shadow: 0px 2px 2px 2px lightgrey;
+    transition: .8s;
+}
+.contact-form input[type=submit]{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    color:#443266;
+    line-height: 25px;
+    border: 1px solid #5f5f5f;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.contact-form input[type=submit]:hover{
+    color: white;
+    background-color:#443266;
+    border: 0;
+    line-height: 27px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+/**************************** Footer ************************************************/
+
+footer{
+    padding: 0;
+    margin-top: 1.7%;
+}
+.footer{
+    padding: 2% 0;
+}
+        
